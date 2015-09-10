@@ -2,8 +2,8 @@ FROM resin/rpi-raspbian:wheezy
 
 MAINTAINER Anthony O'Brien
 
-RUN apt-get update && \
-    apt-get install \
+RUN apt-get update -y && \
+    apt-get install -y \
     python-dev \
     python-numpy \
     libgtk2.0-dev \
