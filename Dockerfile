@@ -10,6 +10,9 @@ RUN apt-get update -y && \
     libavcodec-dev \
     libavformat-dev \
     libswscale-dev \
-    libv4l-dev
+    libv4l-dev && \
+    apt-get clean -y && \
+    apt-get autoclean -y && \
+    apt-get autoremove -y
 
-ADD opencv-py-2.4.10.zip /usr/local/lib/python2.7/dist-packages/
+ADD opencv-py-2.4.10.tar.gz /usr/local/lib/python2.7/dist-packages/
